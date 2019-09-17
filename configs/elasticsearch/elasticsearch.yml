@@ -2,23 +2,37 @@
 #
 # Use a descriptive name for your cluster:
 #
-cluster.name: ilm-test
+cluster:
+  name: ilm-test
 #
 # ------------------------------------ Node ------------------------------------
 #
 # Use a descriptive name for the node:
 #
-#node.name: node-1
+node:
+  name: node-1
 #
 # Add custom attributes to the node:
 #
 #node.attr.rack: r1
 #
+# ---------------------------------- Security ----------------------------------
+xpack:
+  security:
+    enabled: true
+    authc:
+      realms:
+        native:
+          native1:
+            order: 0
 # ----------------------------------- Paths ------------------------------------
 #
 # Path to directory where to store the data (separate multiple locations by comma):
 #
 #
+path:
+  data: /usr/share/elasticsearch/data
+  logs: /usr/share/elasticsearch/logs
 # ----------------------------------- Memory -----------------------------------
 #
 # Lock the memory on startup:

@@ -4,14 +4,14 @@
       "hot": {
         "actions": {
           "rollover": {
-            "max_size": "1GB",
-            "max_age": "1d",
-            "max_docs": "100"
+            "max_size": "10MB",
+            "max_age": "5d",
+            "max_docs": "5000"
           }
         }
       },
       "delete": {
-        "min_age": "2d",
+        "min_age": "15d",
         "actions": {
           "delete": {}
         }
